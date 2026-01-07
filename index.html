@@ -2,67 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ViralCryptoInsights | Crypto Intelligence Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViralCryptoInsights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">ViralCryptoInsights</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="features.html">Products</a>
-    <a href="learning.html">Learning</a>
-    <a href="contact.html">Contact</a>
-    <a class="btn primary" href="subscribe.html">Early Access</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="assets/logo.png" alt="ViralCryptoInsights Logo"></div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#access">Early Access</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<section class="hero">
-  <h1>Your Gateway to Crypto Intelligence</h1>
-  <p>Research • Insights • Automation • Education</p>
-  <p class="hero-desc">
-    ViralCryptoInsights is a research-driven crypto intelligence platform delivering
-    market updates, educational content, and automated insights — responsibly and transparently.
-  </p>
-  <div class="cta">
-    <a class="btn primary" href="subscribe.html">Request Early Access</a>
-    <a class="btn outline" href="features.html">Explore Platform</a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Clarity in <span>Crypto.</span> Intelligence that Matters.</h1>
+      <p>Research-driven crypto insights, market updates, and learning resources for investors and enthusiasts.</p>
+      <div class="hero-buttons">
+        <a href="#access" class="btn btn-primary">Request Early Access</a>
+        <a href="#features" class="btn btn-secondary">Explore Platform</a>
+      </div>
+    </div>
+  </section>
 
-<section class="section reveal">
-  <h2>What We Do</h2>
-  <div class="grid">
-    <div class="card">📊 <h3>Market Updates</h3><p>Live crypto market movements and summaries.</p></div>
-    <div class="card">📰 <h3>News & Regulation</h3><p>Indian & global crypto, ETF and policy updates.</p></div>
-    <div class="card">🧠 <h3>Learning & Research</h3><p>Beginner to expert crypto education.</p></div>
-    <div class="card">⚙️ <h3>Automation</h3><p>Smart, timely and consistent information delivery.</p></div>
-  </div>
-</section>
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2 class="section-title">What We Do</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Market Updates</h3>
+        <p>Real-time crypto market analysis and insights for informed decision-making.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚖️</div>
+        <h3>Regulations & Policy</h3>
+        <p>Stay compliant with India and international crypto regulations.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Learning Hub</h3>
+        <p>Crypto courses and technical analysis from beginner to expert level.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Automation Ready</h3>
+        <p>Integrate bots and automation tools with our intelligence platform.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section dark reveal">
-  <h2>Why ViralCryptoInsights</h2>
-  <ul class="points">
-    <li>Research-first, no hype</li>
-    <li>No profit promises or false claims</li>
-    <li>Educational & informational focus</li>
-    <li>Built for long-term crypto understanding</li>
-    <li>India-friendly and global-ready</li>
-  </ul>
-</section>
+  <!-- Learning Section -->
+  <section class="learning" id="learning">
+    <h2 class="section-title">Learning Series</h2>
+    <p style="text-align:center; max-width:700px; margin:1rem auto;">Beginner to Expert crypto education, technical analysis, and market insights. Structured for all levels of investors.</p>
+  </section>
 
-<footer>
-  <p>
-    Disclaimer: ViralCryptoInsights provides educational and informational content only.
-    This is not financial advice. DYOR before investing.
-  </p>
-  <p>© ViralCryptoInsights</p>
-</footer>
+  <!-- Early Access Section -->
+  <section class="early-access" id="access">
+    <h2>Request Early Access</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2026 ViralCryptoInsights. All rights reserved.</p>
+    <p>Educational content only. Not financial advice.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
