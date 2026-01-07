@@ -42,7 +42,29 @@ nav a {
   border-radius:10px;
 }
 
-.points li { margin:10px 0; }
+.points li 
+{ 
+  margin:10px 0; 
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+
 
 footer {
   text-align:center;
