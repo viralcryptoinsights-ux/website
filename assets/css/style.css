@@ -1,4 +1,4 @@
-
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +7,13 @@
 }
 
 body {
-  background: #0f111a; /* dark background */
+  background: #0f111a;
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+a { text-decoration: none; color: inherit; }
 
 /* Navbar */
 .navbar {
@@ -25,16 +27,8 @@ body {
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a:hover {
-  color: #00E5FF; /* cyan accent */
-  transition: 0.3s ease;
-}
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a:hover { color: #00E5FF; transition:0.3s ease; }
 
 /* Hero Section */
 .hero {
@@ -48,132 +42,52 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-.hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero h1 span {
-  color: #00E5FF; /* cyan highlight */
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
+.hero h1 { font-family: 'Poppins', sans-serif; font-size: 3rem; margin-bottom: 1rem; }
+.hero h1 span { color: #00E5FF; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
 .hero-buttons .btn {
   padding: 0.8rem 2rem;
   border-radius: 8px;
   font-weight: 600;
-  transition: 0.3s ease;
   margin: 0 0.5rem;
   cursor: pointer;
+  transition: 0.3s ease;
 }
-
-.btn-primary {
-  background: #00E5FF;
-  color: #0f111a;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #00E5FF;
-}
-
-.btn-secondary {
-  border: 2px solid #00E5FF;
-  color: #00E5FF;
-}
-
-.btn-secondary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #00E5FF;
-}
+.btn-primary { background: #00E5FF; color: #0f111a; }
+.btn-primary:hover { transform: scale(1.05); box-shadow:0 0 15px #00E5FF; }
+.btn-secondary { border: 2px solid #00E5FF; color:#00E5FF; }
+.btn-secondary:hover { transform: scale(1.05); box-shadow:0 0 10px #00E5FF; }
 
 /* Feature Cards */
-.features {
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.section-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-
-.feature-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
+.features { padding:5rem 2rem; text-align:center; }
+.section-title { font-family:'Poppins',sans-serif; font-size:2.5rem; margin-bottom:3rem; }
+.feature-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
 .card {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 2rem;
-  transition: 0.3s ease;
-  cursor: pointer;
+  border-radius:15px;
+  padding:2rem;
+  transition:0.3s ease;
+  cursor:pointer;
 }
+.card:hover { transform: translateY(-10px); box-shadow:0 15px 25px rgba(0,229,255,0.3); }
+.card .icon { font-size:2rem; margin-bottom:1rem; color:#00E5FF; }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0, 229, 255, 0.3);
-}
+/* Learning Section */
+.learning { padding:3rem 2rem; }
+.learning p { color:#aaa; line-height:1.5; }
 
-.card .icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #00E5FF;
-}
-
-/* Early Access Section */
-.early-access {
-  padding: 5rem 2rem;
-  background: #111622;
-  text-align: center;
-}
-
+/* Early Access */
+.early-access { padding:5rem 2rem; background:#111622; text-align:center; }
 .early-access form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
-  margin: 0 auto;
+  display:flex; flex-direction:column; gap:1rem; max-width:400px; margin:0 auto;
 }
-
-.early-access input {
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-}
-
+.early-access input { padding:0.8rem; border-radius:8px; border:none; outline:none; }
 .early-access button {
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: none;
-  background: #00E5FF;
-  color: #0f111a;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
+  padding:0.8rem; border-radius:8px; border:none; background:#00E5FF; color:#0f111a; font-weight:600; cursor:pointer;
+  transition:0.3s ease;
 }
-
-.early-access button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #00E5FF;
-}
+.early-access button:hover { transform: scale(1.05); box-shadow:0 0 15px #00E5FF; }
 
 /* Footer */
-footer {
-  padding: 2rem;
-  background: #0f111a;
-  text-align: center;
-  color: #aaa;
-  font-size: 0.9rem;
-}
+footer { padding:2rem; background:#0f111a; text-align:center; color:#aaa; font-size:0.9rem; }
